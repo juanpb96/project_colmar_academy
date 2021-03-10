@@ -12,12 +12,18 @@
     <header>
         <nav>
             <div id="logo">
-                <p><img src="./resources/images/ic-logo.svg" alt="A lion standing in two feet - Colmar's Academy logo icon"> <span>COLMAR</span></p>
+                <p><img src="./resources/images/ic-logo.svg" alt="A lion standing in two feet - Colmar's Academy logo icon"> <span class="desktop">COLMAR</span></p>
             </div>
-            <ul>
-                <li><img src="./resources/images/ic-on-campus.svg" alt="A student desk"></li>
-                <li><img src="./resources/images/ic-online.svg" alt="A computer screen"></li>
-                <li><img src="./resources/images/ic-login.svg" alt="A person icon"></li>
+            <ul class="mobile">
+                <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="A student desk"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-online.svg" alt="A computer screen"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-login.svg" alt="A person icon"></a></li>
+            </ul>
+            <ul class="desktop">
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">For companies</a></li>
+                <li><a href="#">Sign in</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +40,7 @@
     </section>
 
     <section id="info">
-        <article>
+        <article class="desktop">
             <img src="./resources/images/information-main.jpg" alt="A man sitting in the park reading a book">
             <div class="container">
                 <h3>It doesn't hurt to keep practicing</h3>
@@ -44,7 +50,8 @@
         </article>
 
         <article>
-            <img src="./resources/images/information-orientation-mobile.jpg" alt="Top view of people walking left to right under the Sun and their shadow reflecting to the floor">
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Top view of people walking left to right under the Sun and their shadow reflecting to the floor">
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Top view of people walking left to right under the Sun and their shadow reflecting to the floor">
             <div class="container">
                 <h3>Orientation date</h3>
                 <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -53,7 +60,8 @@
         </article>
 
         <article>
-            <img src="./resources/images/information-campus-mobile.jpg" alt="Inside a restaurant people gathering in different tables and a map of South America is placed on the wall">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Inside a restaurant people gathering in different tables and a map of South America is placed on the wall">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="Inside a restaurant people gathering in different tables and a map of South America is placed on the wall">
             <div class="container">
                 <h3>Our campus</h3>
                 <p>Find which campus is close by you</p>
@@ -62,12 +70,13 @@
         </article>
 
         <article>
-            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="An old man with gray beard, glasses and a hat looking to the horizon">
-    <div class="container">
-        <h3>Special guest lecture</h3>
-        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-        <p><a href="#">Read more</a></p>
-    </div>            
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="An old man with gray beard, glasses and a hat looking to the horizon">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="An old man with gray beard, glasses and a hat looking to the horizon">
+            <div class="container">
+                <h3>Special guest lecture</h3>
+                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                <p><a href="#">Read more</a></p>
+            </div>            
         </article>
     </section>
 
