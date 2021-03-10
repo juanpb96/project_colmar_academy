@@ -22,6 +22,7 @@ video {
     text-align: center;
     padding: 10px 0;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn a {
@@ -145,6 +146,27 @@ nav ul li {
 #banner p {
     margin-bottom: 24px;
     font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    #banner {
+        position: static !important;
+        display: flex;
+        align-items: center;
+    }
+
+    #banner img {
+        position: static !important;
+        width: 60%;
+        padding: 32px 24px;
+        box-sizing: border-box;
+    }
+
+    #banner .container {
+        position: static !important;
+        width: 30%;
+        background-color: unset !important;
+    }
 }
 
 @media only screen and (min-width: 500px) {
