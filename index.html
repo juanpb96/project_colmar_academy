@@ -11,10 +11,14 @@
 <body>
     <header>
         <nav>
-            <img src="./resources/images/ic-logo.svg" alt="A lion standing in two feet - Colmar's Academy logo icon">
-            <img src="./resources/images/ic-on-campus.svg" alt="A student desk">
-            <img src="./resources/images/ic-online.svg" alt="A computer screen">
-            <img src="./resources/images/ic-login.svg" alt="A person icon">
+            <div id="logo">
+                <p><img src="./resources/images/ic-logo.svg" alt="A lion standing in two feet - Colmar's Academy logo icon"> <span>COLMAR</span></p>
+            </div>
+            <ul>
+                <li><img src="./resources/images/ic-on-campus.svg" alt="A student desk"></li>
+                <li><img src="./resources/images/ic-online.svg" alt="A computer screen"></li>
+                <li><img src="./resources/images/ic-login.svg" alt="A person icon"></li>
+            </ul>
         </nav>
     </header>
 
@@ -31,9 +35,18 @@
 
     <section id="info">
         <article>
+            <img src="./resources/images/information-main.jpg" alt="A man sitting in the park reading a book">
+            <div class="container">
+                <h3>It doesn't hurt to keep practicing</h3>
+                <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum pariatur dignissimos iusto, aliquam voluptates nam odio nobis iste eveniet provident doloribus id est porro culpa ad explicabo quisquam quos repellendus.</q></p>
+                <p>Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+        </article>
+
+        <article>
             <img src="./resources/images/information-campus-mobile.jpg" alt="Top view of people walking left to right under the Sun and their shadow reflecting to the floor">
             <div class="container">
-                <h3>Orientation Date</h3>
+                <h3>Orientation date</h3>
                 <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
                 <p><a href="#">Read more</a></p>
             </div>
@@ -60,38 +73,101 @@
 
     <section id="start-learning">
         <h2>Start Learning</h2>
-        <div class="courses-container">
-            <div class="course">
-                <h3>Software engineering</h3>
+        <div class="mobile">
+            <div class="courses-container">
+                <div class="course">
+                    <h3>Software engineering</h3>
+                </div>
+                <div class="course">
+                    <h3>Computer art</h3>
+                </div>
+                <div class="course">
+                    <h3>Design</h3>
+                </div>
+                <div class="course">
+                    <h3>Data</h3>
+                </div>
+                <div class="course">
+                    <h3>Business</h3>
+                </div>
+                <div class="course">
+                    <h3>Marketing</h3>
+                </div>
             </div>
-            <div class="course">
-                <h3>Computer art</h3>
-            </div>
-            <div class="course">
-                <h3>Design</h3>
-            </div>
-            <div class="course">
-                <h3>Data</h3>
-            </div>
-            <div class="course">
-                <h3>Business</h3>
-            </div>
-            <div class="course">
-                <h3>Marketing</h3>
+        </div>
+        <div class="desktop">
+            <div class="courses-container">
+                <div class="course">
+                    <img src="./resources/images/course-software.jpg" alt="Two desktop computers on a table">
+                    <h3>Software engineering</h3>
+                    <h4>COURSES</h4>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+                <div class="course">
+                    <img src="./resources/images/course-computer-art.jpg" alt="A hand holding up a smartphone">
+                    <h3>Computer art</h3>
+                    <h4>COURSES</h4>
+                    <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+                </div>
+                <div class="course">
+                    <img src="./resources/images/course-design.jpg" alt="Someone in a park holding a camera near to his/her stomach and being ready to take a photo">
+                    <h3>Design</h3>
+                    <h4>COURSES</h4>
+                    <p>User Experience Design, User Research, Visual Design</p>
+                </div>
+                <div class="course">
+                    <img src="./resources/images/course-data.jpg" alt="A laptop open, in its scree is showing stadistics and graphics">
+                    <h3>Data</h3>
+                    <h4>COURSES</h4>
+                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+                <div class="course">
+                    <img src="./resources/images/course-business.jpg" alt="A chessboard">
+                    <h3>Business</h3>
+                    <h4>COURSES</h4>
+                    <p>Product Development, Business Development, Startup</p>
+                </div>
+                <div class="course">
+                    <img src="./resources/images/course-marketing.jpg" alt="Someone touching the screen of his/her smartwatch">
+                    <h3>Marketing</h3>
+                    <h4>COURSES</h4>
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="thesis-exhibits">
         <h2>Thesis exhibits</h2>
-        <video autoplay="false" controls="true">
-            <source src="./resources/videos/thesis.mp4" type="video/mp4">
-            Your browser does not support videos
-        </video>
+        <article>
+            <video autoplay="false" controls="true">
+                <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                Your browser does not support videos
+            </video>
+            <h3>Reimagine urban</h3>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum possimus fuga nulla nostrum tempore pariatur fugiat quia doloremque, velit, saepe deleniti iusto, vitae officia inventore dolor? Corrupti perspiciatis iusto fugit.</q></p>
+        </article>
+
+        <article>
+            <img src="./resources/images/thesis-fisma.jpg" alt="Someone writing o drawing ideas with marker on a white paper that is below his/her smartphone">
+            <h3>Fisma: Design and Prototype</h3>
+            <p>Designer showcase of new prototype product</p>
+        </article>
+
+        <article>
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="New York from a high view with cloudy weather">
+            <h3>Now and then</h3>
+            <p>Research study about New York</p>
+        </article>
     </section>
 
     <footer>
         <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+        <ul class="conditions">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+        
     </footer>
 </body>
 </html>

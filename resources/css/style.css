@@ -1,19 +1,11 @@
+/* Font: Noto Sant 900 700 400 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap');
+
+/* General styles */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header {
-    width: 100%;
-    height: 64px;
-}
-
-nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    font-family: 'Noto Sans JP', Tahoma, sans-serif;
+    color: #4a4a4a;
+    line-height: 1.5;
 }
 
 section img, section video {
@@ -33,6 +25,37 @@ section img, section video {
     color: white;
 }
 
+/* Header */
+header {
+    width: 100%;
+    height: 64px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav p:first-child span {
+    display: none;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1200px) {
+    nav p:first-child span {
+        display: inline;
+    }
+    
+    nav p:first-child span::after {
+        content: "ACADEMY";
+        font-weight: 300;
+    }
+}
+
 /* Banner section */
 #banner {
     background-color: #ccc;
@@ -44,43 +67,78 @@ section img, section video {
 
 #banner h1 {
     margin-bottom: 32px;
+    font-weight: 900;
 }
 
 #banner p {
     margin-bottom: 24px;
+    font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 500px) {
+    #banner {
+        position: relative;
+    }
+
+    #banner img {
+        position: absolute;
+        max-height: 100%;
+    }
+
+    #banner .container {
+        position: relative;
+        background-color: rgba(230,230,230,0.8);
+    }
 }
 
 /* Information section */
 #info {
-    padding: 16px 16px 32px;
+    padding: 32px 16px;
+    border-bottom: 0.1rem solid #E6E6E6;
 }
 
 #info article:not(article:last-child) {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 #info article .container {
     margin-left: 16px;
 }
 
-#info article p {
+#info article .container h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#info article .container p {
+    font-size: 0.875rem;
+    font-weight: 300;
     margin: 8px 0;
+}
+
+#info article .container a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 /* Start learning section */
 section h2 {
-    padding: 0 0 16px; /* This also affects Thesis h2*/
+    padding-bottom: 20px;/* This also affects Thesis h2*/
     text-align: center;
+    font-weight: 900;
+    margin: 0;
 }
 
 #start-learning {
-    padding: 32px 16px 32px;
+    padding: 32px 16px;
+    border-bottom: 0.1rem solid #E6E6E6;
 }
 
 #start-learning .courses-container {}
 
 #start-learning .course {
-    background-color: #ccc;
+    background-color: #d8d8d8;
     padding: 16px 16px;
     margin-bottom: 8px;
     border-radius: 3px;
@@ -90,7 +148,23 @@ section h2 {
     margin-bottom: 0px;   
 }
 
+#start-learning .course h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Thesis section */
+#thesis-exhibits {
+    padding: 32px 0 16px;
+}
+
 /* Footer section */
 footer {
-    padding: 16px 0;
+    padding: 16px 16px;
+}
+
+footer p {
+    font-size: 0.875rem;
+    font-weight: 300;
 }
