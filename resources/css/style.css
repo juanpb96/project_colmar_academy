@@ -25,6 +25,17 @@ section img, section video {
     color: white;
 }
 
+section h2 {
+    padding-bottom: 20px;/* This affects Start learning and Thesis h2*/
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+}
+
+.desktop {
+    display: none;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -38,6 +49,24 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav ul {
+    width: 75%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
 }
 
 nav p:first-child span {
@@ -97,6 +126,10 @@ nav p:first-child span {
     border-bottom: 0.1rem solid #E6E6E6;
 }
 
+#info article:first-child {
+    display: none;
+}
+
 #info article:not(article:last-child) {
     margin-bottom: 32px;
 }
@@ -123,13 +156,6 @@ nav p:first-child span {
 }
 
 /* Start learning section */
-section h2 {
-    padding-bottom: 20px;/* This also affects Thesis h2*/
-    text-align: center;
-    font-weight: 900;
-    margin: 0;
-}
-
 #start-learning {
     padding: 32px 16px;
     border-bottom: 0.1rem solid #E6E6E6;
@@ -167,4 +193,9 @@ footer {
 footer p {
     font-size: 0.875rem;
     font-weight: 300;
+}
+
+footer .conditions li {
+    display: inline-block;
+    list-style-type: none;
 }
