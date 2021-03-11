@@ -1,6 +1,6 @@
 # Colmar Academy
 
-This project is made using HTML 5 and CSS with mobile first orientation and is showing an academy home page.
+This project is made using HTML 5 and CSS with mobile first orientation and is showing an academy home page. You can find a banner, information, courses and thesis sections.
 
 ## Technologies used
 
