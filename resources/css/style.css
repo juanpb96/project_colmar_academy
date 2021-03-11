@@ -49,6 +49,10 @@ section h2 {
     .mobile {
         display: none;
     }
+
+    section h2 {
+        padding-bottom: 32px;
+    }
 }
 
 /* Header */
@@ -283,8 +287,6 @@ nav ul li {
     border-bottom: 0.1rem solid #E6E6E6;
 }
 
-#start-learning .courses-container {}
-
 #start-learning .course {
     background-color: #d8d8d8;
     padding: 16px 16px;
@@ -300,6 +302,47 @@ nav ul li {
     font-size: 1.125rem;
     font-weight: 400;
     margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    #start-learning {
+        padding: 32px 72px;
+        background-color: #E6E6E6;
+    }
+    
+    #start-learning .desktop .courses-container {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    #start-learning .course {
+        background-color: #FFF;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #start-learning .course .course-description {
+        padding: 16px 16px 24px;
+    }
+
+    #start-learning .course .course-description h3 {
+        font-size: 1.325rem;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    #start-learning .course .course-description h4 {
+        font-weight: 400;
+        margin: 8px 0;
+    }
+
+    #start-learning .course .course-description p {
+        font-weight: 300;
+    }
 }
 
 /* Thesis section */
