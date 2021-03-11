@@ -325,6 +325,10 @@ nav ul li {
         margin: 0;
     }
 
+    #start-learning .course img {
+        border-radius: 3px 3px 0 0;
+    }
+
     #start-learning .course .course-description {
         padding: 16px 16px 24px;
     }
@@ -352,8 +356,69 @@ nav ul li {
 
 @media only screen and (min-width: 1200px) {
     #thesis-exhibits {
-        padding: 32px 24px;
+        padding: 0;
         border-bottom: 0.1rem solid #E6E6E6;
+    }
+
+    #thesis-exhibits h2 {
+        padding-top: 32px;
+    }
+
+    #thesis-exhibits .thesis-container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #thesis-exhibits .thesis-container > article {
+        width: 60%;
+        padding: 0 24px 32px;
+        box-sizing: border-box;
+    }
+
+    #thesis-exhibits .thesis-container > article h3 {
+        font-size: 1.875rem;
+        font-weight: 900;
+        margin: 24px 0 8px;
+    }
+
+    #thesis-exhibits .thesis-container > article .desktop {
+        padding-left: 16px;
+    }
+
+    #thesis-exhibits .thesis-container > article .desktop p {
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    #thesis-exhibits .thesis-container .thesis-sidebar {
+        width: 40%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    #thesis-exhibits .thesis-container .thesis-sidebar article {
+        display: flex;
+        align-items: center;
+    }
+
+    #thesis-exhibits .thesis-container .thesis-sidebar article:hover {
+        background-color: #d8d8d8;
+        cursor: pointer;
+    }
+
+    #thesis-exhibits .thesis-container .thesis-sidebar img {
+        width: 35%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #thesis-exhibits .thesis-container .thesis-sidebar .container {
+        width: 65%;
+        display: inline-block;
+        padding-right: 16px;
+        box-sizing: border-box;
     }
 }
 
