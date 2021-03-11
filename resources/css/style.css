@@ -432,7 +432,28 @@ footer p {
     font-weight: 300;
 }
 
-footer .conditions li {
-    display: inline-block;
-    list-style-type: none;
+@media only screen and (min-width: 1200px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .conditions li {
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 16px;
+    }
+
+    footer .conditions li a {
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: inherit;
+        padding-bottom: 10px;
+    }
+
+    footer .conditions li a:hover {
+        border-bottom: 3px solid #d8d8d8;
+    }
 }
