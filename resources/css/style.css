@@ -196,7 +196,7 @@ nav ul li {
 }
 
 #info article .container {
-    margin-left: 16px;
+    padding-left: 16px;
 }
 
 #info article .container h3 {
@@ -217,7 +217,64 @@ nav ul li {
 }
 
 @media only screen and (min-width: 1200px) {
+    #info {
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+    }
 
+    #info p {
+        font-size: 1rem;
+    }
+
+    #info article.desktop {
+        padding: 32px 24px;
+        box-sizing: border-box;
+        width: 60%;
+    }
+
+    #info article.desktop > .container h3 {
+        font-size: 1.875rem;
+        font-weight: 900;
+        margin-top: 32px;
+    }
+
+    #info article.desktop > .container p {
+        margin-top: 24px;
+        font-size: 1.125rem;
+    }
+
+    #info > .container {
+        width: 40%;
+        padding: 32px 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #info > .container article {
+        width: 100%;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    #info > .container article:hover {
+        background-color: #d8d8d8;
+    }
+
+    #info > .container article img.desktop {
+        display: inline-block;
+        width: 35%;
+    }
+
+    #info > .container article > .container {
+        width: 64%;
+        display: inline-block;
+        box-sizing: border-box;
+    }
 }
 
 /* Start learning section */
